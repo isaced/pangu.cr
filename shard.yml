@@ -1,0 +1,9 @@
+name: pangu
+version: 0.1.0
+
+authors:
+  - isaced <isaced@163.com>
+
+crystal: 0.27.2
+
+license: MIT
