@@ -1,4 +1,4 @@
-# pangu [![Build Status](https://travis-ci.org/isaced/pangu.cr.svg?branch=master)](https://travis-ci.org/isaced/pangu.cr)
+# pangu [![Build Status](https://travis-ci.org/isaced/pangu.cr.svg?branch=master)](https://travis-ci.org/isaced/pangu.cr) [![GitHub releases](https://img.shields.io/github/release/isaced/pangu.cr.svg)](https://github.com/isaced/pangu.cr/releases)
 
 Paranoid text spacing for good readability, to automatically insert whitespace between CJK (Chinese, Japanese, Korean) and half-width characters (alphabetical letters, numerical digits and symbols).
 
