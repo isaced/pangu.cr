@@ -38,29 +38,25 @@ module Pangu
 
   def self.spacing_text(text : String)
     text = text.gsub(CJK_QUOTE, "\\1 \\2")
-    text = text.gsub(QUOTE_CJK, "\\1 \\2")
-
-    text = text.gsub(FIX_QUOTE, "\\1\\3\\5")
-    text = text.gsub(FIX_SINGLE_QUOTE, "\\1\\3\\4")
-
-    text = text.gsub(CJK_HASH, "\\1 \\2")
-    text = text.gsub(HASH_CJK, "\\1 \\3")
-
-    text = text.gsub(CJK_OPERATOR_ANS, "\\1 \\2 \\3")
-    text = text.gsub(ANS_OPERATOR_CJK, "\\1 \\2 \\3")
+      .gsub(QUOTE_CJK, "\\1 \\2")
+      .gsub(FIX_QUOTE, "\\1\\3\\5")
+      .gsub(FIX_SINGLE_QUOTE, "\\1\\3\\4")
+      .gsub(CJK_HASH, "\\1 \\2")
+      .gsub(HASH_CJK, "\\1 \\3")
+      .gsub(CJK_OPERATOR_ANS, "\\1 \\2 \\3")
+      .gsub(ANS_OPERATOR_CJK, "\\1 \\2 \\3")
 
     old_text = text
     text = text.gsub(CJK_BRACKET_CJK, "\\1 \\2 \\4")
     if old_text == text
       text = text.gsub(CJK_BRACKET, "\\1 \\2")
-      text = text.gsub(BRACKET_CJK, "\\1 \\2")
+        .gsub(BRACKET_CJK, "\\1 \\2")
     end
+
     text = text.gsub(FIX_BRACKET, "\\1\\3\\5")
-
-    text = text.gsub(FIX_SYMBOL, "\\1\\2 \\3")
-
-    text = text.gsub(CJK_ANS, "\\1 \\2")
-    text = text.gsub(ANS_CJK, "\\1 \\2")
+      .gsub(FIX_SYMBOL, "\\1\\2 \\3")
+      .gsub(CJK_ANS, "\\1 \\2")
+      .gsub(ANS_CJK, "\\1 \\2")
     text
   end
 
